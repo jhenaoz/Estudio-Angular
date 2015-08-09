@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+	<head></head>
+	<body ng-app="estudioAngular">
+
+		<section ng-controller="controlador-estudio">
+			<p ng-click="mostrarVentana()">Hola!</p>
+			
+			<form name='testForm'>
+				<input placeholder="nombre" type="text" ng-model="nombre" ng-required='true'>
+				<input placeholder="email" type="email" ng-model="email" ng-required='true'>
+				<button ng-click='submit()'>Enviar</button>
+			</form>
+
+			<p>Datos del Formulario:</p>
+			<p>{{nombre}}</p>
+			<p>{{email}}</p>
+
+		</section>
+		
+
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="scripts/app.js"></script>
+		<script src="scripts/controlador-estudio.js"></script>
+	</body>
+
+</html>
